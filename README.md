@@ -68,6 +68,8 @@ docker build -t jcm-chatgpt .
 ```
 ## 运行镜像
 构建完成后，可以使用以下命令运行镜像，其中 "my-container" 是您想要给容器取的名称。该命令会将容器端口 80 映射到本地机器的端口 80。
+docker pull ccr.ccs.tencentyun.com/taskmsg/tasgineopen:2-20230319
+
 ```
 docker run --name my-chatgpt -p 80:80 jcm-chatgpt
 ```
